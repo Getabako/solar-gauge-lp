@@ -173,6 +173,70 @@ footer .ring:hover{background:rgba(201,168,106,.1)}
 footer .ring svg{width:16px;height:16px;stroke:var(--gold);fill:none;stroke-width:1.5;margin-bottom:.3rem}
 footer .meta{display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;margin-top:4rem;padding-top:1.4rem;border-top:1px solid var(--line);font-size:.62rem;letter-spacing:.25em;color:var(--muted)}
 footer .meta nav2{display:flex;gap:1.4rem}
+
+/* ===== mobile overrides ===== */
+@media(max-width:760px){
+  html{font-size:16px}
+  h2{font-size:1.7rem;letter-spacing:.06em}
+  #fcta{padding:.6rem 1rem;font-size:.72rem;right:1rem;bottom:1rem}
+  nav{padding:.9rem 1rem}
+  .lbl{font-size:.62rem;letter-spacing:.22em}
+  /* s1 */
+  .s1 .win{width:58vw;top:50%}
+  .s1 .copy{font-size:1.5rem;letter-spacing:.1em}
+  .s1 .copy.l{top:5.4rem;left:1.2rem}
+  .s1 .copy.r{bottom:7.5rem;right:1.2rem}
+  .s1 .copy .lbl{margin-bottom:.4rem}
+  .s1 .foot{display:none}
+  .s1 .scroll{display:none}
+  /* s2 */
+  .s2 .st{font-size:1.45rem;letter-spacing:.08em;line-height:1.9}
+  .s2 .desc{font-size:.78rem;letter-spacing:.08em;line-height:2}
+  .s2 .pts{display:grid;grid-template-columns:1fr 1fr;gap:.4rem 1rem;left:1.2rem;right:1.2rem;bottom:4.6rem;padding-right:9rem;font-size:.7rem}
+  /* s3 */
+  .s3 .lbl{top:5.4rem;left:1.2rem}
+  .s3 .copy{top:34%;font-size:1.6rem;letter-spacing:.12em}
+  .s3 .copy.l{left:1.2rem}.s3 .copy.r{right:1.2rem}
+  .s3 .panel,.s3 .blue{width:40vw;top:34%}
+  .s3 .side{top:auto;bottom:4.5rem;transform:none;max-width:44vw}
+  .s3 .side.l{left:1.2rem}.s3 .side.r{right:1.2rem}
+  .s3 .side h3{font-size:1.05rem;margin:.3rem 0 .4rem;line-height:1.5}
+  .s3 .side .it{padding:.5rem 0}
+  .s3 .side .it p{font-size:.68rem;line-height:1.7}
+  .s3 .foot{display:none}
+  /* s4 */
+  .s4{padding:6.5rem 1.2rem 4rem;gap:2.2rem}
+  .s4 .acc .q .t span{font-size:1rem;letter-spacing:.06em}
+  .s4 .acc .q .a{font-size:.82rem}
+  /* s5 */
+  .s5{padding:6.5rem 1.2rem 5rem}
+  .s5 .time{font-size:2.6rem}
+  .s5 .ghost{display:none}
+  .s5 .cond{font-size:.68rem;gap:1rem}
+  .s5 p.body{font-size:.85rem}
+  /* s6 */
+  .s6 .tk{padding:1rem 1.1rem}
+  .s6 .tk::after{right:84px}
+  .s6 .tk .route{font-size:1.7rem}
+  .s6 .tk .brand{font-size:.6rem;letter-spacing:.2em;white-space:nowrap}
+  .s6 .tk .stub{font-size:.58rem}
+  .s6 .tk .meta{gap:.4rem}
+  .s6 .tk .meta b{font-size:.8rem}
+  .s6 .cap{left:1.2rem;bottom:4.5rem;max-width:62vw}
+  .s6 .cap h2{font-size:1.25rem}
+  .s6 .side{right:1.2rem;top:5.4rem}
+  /* s7 */
+  .s7{padding:5.6rem 1.2rem 0}
+  .s7 .txt p.body{font-size:.85rem}
+  .s7 .txt .note{font-size:.62rem;margin-top:.8rem}
+  .s7 .stack{height:46vh}
+  .s7 .card{width:min(86%,340px);padding:1.2rem 1.2rem 1rem}
+  .s7 .card p{font-size:.78rem;line-height:1.8}
+  /* footer */
+  footer{padding:4rem 1.2rem 6rem}
+  footer .cta h2{font-size:1.5rem}
+  footer .meta{font-size:.55rem}
+}
 @media(prefers-reduced-motion:reduce){*{animation:none!important}}
 </style>
 </head>
@@ -207,7 +271,7 @@ footer .meta nav2{display:flex;gap:1.4rem}
       <span class="ln"><span>晴</span><span>れ</span><span>の</span><span>日</span><span>も</span><span>、</span><span>曇</span><span>り</span><span>の</span><span>日</span><span>も</span><span>、</span></span>
       <span class="ln"><span>光</span><span>を</span><span>、</span><span>そ</span><span>の</span><span>ま</span><span>ま</span><span>数</span><span>字</span><span>に</span><span>。</span></span>
     </div>
-    <div class="desc">南向きも、東向きも、木陰も、屋上も。<br>取り出せる電力の、ほんとうの姿を記録する。</div>
+    <div class="desc">南向きも、木陰も、屋上も。<br>取り出せる電力の、本当の姿を記録する。</div>
     <div class="pts"><span><b>01</b>接続</span><span><b>02</b>測定開始</span><span><b>03</b>測定終了</span><span><b>04</b>結果共有</span></div>
   </div>
 </section>
@@ -230,15 +294,15 @@ footer .meta nav2{display:flex;gap:1.4rem}
   </div>
   <div class="side l">
     <div class="lbl">A PANEL YOU CAN FOLD</div>
-    <h3>薄く、軽く、<br>曲がる発電面。</h3>
-    <div class="it"><b>OUTPUT</b><p>USB-C 5V/3A、9V/2A、12V/1.5A。ケーブル一本で iPhone と直結。</p></div>
-    <div class="it"><b>FIELD</b><p>ハウスの側面、河川のセンサー架台、非常時のかばんの中へ。</p></div>
+    <h3>薄く、軽く、<br>曲がる。</h3>
+    <div class="it"><b>OUTPUT</b><p>USB-C出力。ケーブル一本でiPhoneと直結。</p></div>
+    <div class="it"><b>FIELD</b><p>ハウス、河川、非常時のかばんの中へ。</p></div>
   </div>
   <div class="side r">
     <div class="lbl">WHAT WE MEASURE</div>
-    <h3>測るのは、<br>端末に届いた電力。</h3>
-    <div class="it"><b>POINT</b><p>iPhone内部センサーが報告するUSB-C入力の V・A・W。</p></div>
-    <div class="it"><b>CYCLE</b><p>1秒周期。隣接3秒以内の有効値だけを積算する。</p></div>
+    <h3>測るのは、<br>届いた電力。</h3>
+    <div class="it"><b>POINT</b><p>iPhoneが報告するUSB-C入力のV・A・W。</p></div>
+    <div class="it"><b>CYCLE</b><p>1秒周期。有効値だけを積算。</p></div>
   </div>
   <div class="foot">CRAFTED AROUND THE FIELD</div>
 </section>
@@ -249,10 +313,10 @@ footer .meta nav2{display:flex;gap:1.4rem}
     <div class="lbl">02 / THE EXPERIENCE</div>
     <h2 style="margin:1rem 0 1.6rem">一画面に、<br>必要なことだけ。</h2>
     <div class="acc">
-      <div class="q open"><div class="t"><span>いま入っている電力を、大きく。</span><i>+</i></div><div class="a"><span class="lbl">LIVE POWER</span>主表示は現在のUSB入力電力。取得できないときは「—」と理由を出し、推定値では埋めない。</div></div>
-      <div class="q"><div class="t"><span>測定終了の瞬間に、集計は終わっている。</span><i>+</i></div><div class="a"><span class="lbl">SUMMARY</span>積算Wh、最大W、時間加重平均W、有効測定時間、欠測件数。終了ボタンひとつで保存まで。</div></div>
+      <div class="q open"><div class="t"><span>いまの電力を、大きく。</span><i>+</i></div><div class="a"><span class="lbl">LIVE POWER</span>主表示は現在のUSB入力電力。取得できないときは「—」と理由を出し、推定値では埋めない。</div></div>
+      <div class="q"><div class="t"><span>終了と同時に、集計完了。</span><i>+</i></div><div class="a"><span class="lbl">SUMMARY</span>積算Wh、最大W、時間加重平均W、有効測定時間、欠測件数。終了ボタンひとつで保存まで。</div></div>
       <div class="q"><div class="t"><span>欠測は、欠測のまま。</span><i>+</i></div><div class="a"><span class="lbl">HONEST GRAPH</span>経時グラフは途切れを線でつながない。停止・再開の境界をまたいで積算しない。</div></div>
-      <div class="q"><div class="t"><span>条件ごと、CSVで持ち帰る。</span><i>+</i></div><div class="a"><span class="lbl">EXPORT</span>天候・影・方向・傾斜・ケーブル・端末残量を記録し、時刻・タイムゾーン・セッションIDと共にCSVへ。</div></div>
+      <div class="q"><div class="t"><span>条件ごとにCSVへ。</span><i>+</i></div><div class="a"><span class="lbl">EXPORT</span>天候・影・方向・傾斜・ケーブル・端末残量を記録し、時刻・タイムゾーン・セッションIDと共にCSVへ。</div></div>
     </div>
   </div>
   <figure><img src="images/field.jpg" alt="夜明けの田園に置かれたパネルとスマートフォン" id="fieldImg"><figcaption>01 / 04 &nbsp; FIELD MEASUREMENT</figcaption></figure>
@@ -280,7 +344,7 @@ footer .meta nav2{display:flex;gap:1.4rem}
   <canvas id="globe"></canvas>
   <div class="ticket"><div class="tk">
     <div>
-      <div class="brand"><span>SOLARGAUGE &nbsp;SESSION</span><span>RESEARCH USE</span></div>
+      <div class="brand"><span>SOLARGAUGE</span><span>SESSION</span></div>
       <div class="route"><span>9.0<small style="font-size:.4em">V</small></span><i></i><span>13.5<small style="font-size:.4em">W</small></span></div>
       <div class="meta"><span>Current<b>1.50 A</b></span><span>Energy<b>2.25 Wh</b></span><span>Valid<b>10 min</b></span></div>
     </div>
